@@ -15,14 +15,14 @@ VECTOR DBs can also do:
 Vector dbs good for sparse & dense vectors
 
 Repo consists of below 6 apps using Vector DBs in various ways: 
-1) Basic semantic search for text documents
-2) RAG
-3) Recommendation system
-4) Hybrid Search app for product Recommendation (uses dense vector for image & sparse for text)
-5) Child Parent similarity app
-6) Anamoly dtection based on database of server logs
+- 1) Basic semantic search for text documents
+- 2) RAG
+- 3) Recommendation system
+- 4) Hybrid Search app for product Recommendation (uses dense vector for image & sparse for text)
+- 5) Child Parent similarity app
+- 6) Anamoly dtection based on database of server logs
  
 
-1) SEMANTIC SEARCH
+## 1) SEMANTIC SEARCH
 search using meaning of content being search, whereas lexical search which looks for literal or pattern matching strings. 
 
