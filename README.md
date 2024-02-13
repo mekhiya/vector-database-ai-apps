@@ -57,7 +57,7 @@ print(embeddings)
 we will use sentence transformer model **all-MiniLM-L6-v2** for embeddings. It maps sentences & paragraphs to a 384 dimensional dense vector space and can be used for tasks like clustering or semantic search.
 
 
-## 1) RAG (Retrieval Augmented Generation)
+## 2) RAG (Retrieval Augmented Generation)
 
 Insteaing of directly sending query to LLMs, in RAGs we optimize the output by also refering authoritative knowledge base (which was not part of training data)
 
