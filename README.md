@@ -38,3 +38,18 @@ search using meaning of content being search, whereas lexical search which looks
 - offers a large collection of pre-trained models tuned for various tasks. 
 - easy to fine-tune your own models 
 
+```
+pip install -U sentence-transformers
+```
+
+```python
+from sentence_transformers import SentenceTransformer
+sentences = ["This is an example sentence", "Each sentence is converted"]
+
+model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
+embeddings = model.encode(sentences)
+print(embeddings)
+```
+
+
+```ruby
