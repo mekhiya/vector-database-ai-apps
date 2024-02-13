@@ -57,3 +57,16 @@ print(embeddings)
 we will use sentence transformer model **all-MiniLM-L6-v2** for embeddings. It maps sentences & paragraphs to a 384 dimensional dense vector space and can be used for tasks like clustering or semantic search.
 
 
+## 1) RAG (Retrieval Augmented Generation)
+
+Insteaing of directly sending query to LLMs, in RAGs we optimize the output by also refering authoritative knowledge base (which was not part of training data)
+
+DATASET - wikipidea articles
+Add embeddings to vector db
+on search Query - Search result on vector database
+pinecone document retrieval
+OpenAI - augmented query sent to OpenAI
+
+![rag](https://github.com/mekhiya/vector-database-ai-apps/assets/8952786/496a275c-a9e7-4382-8db7-9025661c05fa)
+
+[Image Source](https://www.ml6.eu/blogpost/leveraging-llms-on-your-domain-specific-knowledge-base) 
