@@ -112,3 +112,15 @@ index.upsert(
 )
 ```
 (Update + insert = upsert)
+
+## 3) RECOMMENDER SYSTEM
+
+New article
+Embeddings from article titles
+Recommended system which searches across all titles
+
+Reco system based on content rather than topic
+
+
+
+
