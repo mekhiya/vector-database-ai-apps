@@ -59,6 +59,8 @@ we will use sentence transformer model **all-MiniLM-L6-v2** for embeddings. It m
 
 ## 2) RAG (Retrieval Augmented Generation)
 
+[link to git code](https://github.com/mekhiya/vector-database-ai-apps/blob/main/RAG_OPENAI_wikipidea_article.ipynb)
+
 Insteaing of directly sending query to LLMs, in RAGs we optimize the output by also refering authoritative knowledge base (which was not part of training data)
 
 DATASET - wikipidea articles
