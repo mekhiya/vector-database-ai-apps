@@ -70,3 +70,42 @@ OpenAI - augmented query sent to OpenAI
 ![rag](https://github.com/mekhiya/vector-database-ai-apps/assets/8952786/496a275c-a9e7-4382-8db7-9025661c05fa)
 
 [Image Source](https://www.ml6.eu/blogpost/leveraging-llms-on-your-domain-specific-knowledge-base) 
+
+### Embedding model - 'text-embedding-ada-002' (OPENAI)
+- text-embedding-ada-002 used for text search, text similarity, and code search
+- outperforms previous model - Davinci
+
+![embedding-models](https://github.com/mekhiya/vector-database-ai-apps/assets/8952786/69d4dd14-8932-4389-9aec-5ad03aad859e)
+
+OpenAI Embedding model can be simply called by below line. It converts 
+''' Python
+import openai
+response = openai.Embedding.create(
+  input="I have a dream",
+  model="text-embedding-ada-002"
+)
+'''
+
+### PINECONE Index works with format of values:
+'''python
+from pinecone import Pinecone
+
+pc = Pinecone(api_key="YOUR_API_KEY")
+index = pc.Index("pinecone-index")
+
+index.upsert(
+  vectors=[
+    {
+      "id": "A", 
+      "values": [0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1], 
+      "metadata": {"genre": "comedy", "year": 2020}
+    },
+    {
+      "id": "B", 
+      "values": [0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2],
+      "metadata": {"genre": "documentary", "year": 2019}
+    }
+  ]
+)
+'''
+(Update + insert = upsert)
