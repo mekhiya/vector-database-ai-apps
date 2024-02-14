@@ -78,16 +78,17 @@ OpenAI - augmented query sent to OpenAI
 ![embedding-models](https://github.com/mekhiya/vector-database-ai-apps/assets/8952786/69d4dd14-8932-4389-9aec-5ad03aad859e)
 
 OpenAI Embedding model can be simply called by below line. It converts 
-''' Python
+```python
 import openai
 response = openai.Embedding.create(
   input="I have a dream",
   model="text-embedding-ada-002"
 )
-'''
+```
 
 ### PINECONE Index works with format of values:
-'''python
+(ids, values, metadata)
+```python
 from pinecone import Pinecone
 
 pc = Pinecone(api_key="YOUR_API_KEY")
@@ -107,5 +108,5 @@ index.upsert(
     }
   ]
 )
-'''
+```
 (Update + insert = upsert)
